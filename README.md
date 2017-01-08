@@ -1,6 +1,8 @@
 # i-gitlab
 Configure gitlab step by step
 
+_我是在虚拟机安装的网络配置需选择桥接的方式才能配置一个本地IP，NAT是没有IP的哟_
+
 ## Dependencies
 
 - Linux OS (CentOS)
