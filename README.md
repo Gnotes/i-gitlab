@@ -18,12 +18,12 @@ _我是在虚拟机安装的网络配置需选择桥接的方式才能配置一�
 ## download centos
 
 click [centos.org download](https://www.centos.org/download/) to download centos ,and you will see the website like below
-<img src="./centos-download.png" width="400">
+<img src="./image/centos-download.png" width="400">
  choose `minimal iso ` is ok,
 
 then configure your virtual machine, while there is no option name centos ,so you would like to choose `linux os` and configure the network `桥接 bridge connection` . after everything is done ,let's begin.
 
-<img src="./centos-complete.png" width="400">
+<img src="./image/centos-complete.png" width="400">
 
 ## install nginx
 Before install nginx we need to install some dependencies like wget ,pcre and openssl.
@@ -35,7 +35,8 @@ yum -y install wget
 ```
 
 if the command line show [`Cannot find a valid baseurl for repo`](http://www.111cn.net/sys/CentOS/89958.htm) ,maybe you should edit the `/etc/sysconfig/network-scripts/ifcfg-eth*` file ,change to `ONBOOT=yes` and reload the network with `service network restart`
-<img src="./onboot.png" width="200">
+
+<img src="./image/onboot.png" width="400">
 
 ### install pcre and openssl  
 
