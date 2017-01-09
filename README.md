@@ -40,10 +40,33 @@ if the command line show [`Cannot find a valid baseurl for repo`](http://www.111
 
 ### install pcre and openssl  
 
+yum安装（安装后我找不到安装目录😢，有知道的还请指点!!）
 ```shell
 yum -y install pcre* # * cannot be dismissed
 yum -y install openssl*
 ```
+
+**wget 安装** 到指定目录   
+到此FTP选择版本进行安装`ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre`    
+
+```shell
+cd /usr/local/src
+wget ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-8.37.tar.gz 
+tar -zxvf pcre-8.37.tar.gz
+cd pcre-8.34
+./configure
+make
+make install
+```
+
+`https://www.openssl.org` 选择openssl版本安装   
+
+```shell
+cd /usr/local/src
+wget https://www.openssl.org/source/openssl-1.0.1t.tar.gz
+tar -zxvf openssl-1.0.1t.tar.gz
+```
+
 
 click [nginx目录](http://nginx.org/download) to choose a nginx version (*nginx-1.9.9.tar.gz*),and install it 
 
